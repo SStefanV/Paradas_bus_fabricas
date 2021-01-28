@@ -1,10 +1,30 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:paradas_bus/poligono.dart';
-import './residenciaLaRioja.dart';
-import './log_poligono.dart';
 
 class MyApp extends StatelessWidget {
+  Widget makeButton(BuildContext context, String ruta, String name) {
+    return RaisedButton(
+      padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+      color: Colors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: new BorderRadius.circular(12.0),
+        side: BorderSide(color: Colors.red[900]),
+      ),
+      //splashColor: Colors.red[900],
+      child: Text(
+        name,
+        style: TextStyle(
+          fontSize: 13,
+          color: Colors.black,
+        ),
+      ),
+      textColor: Colors.white,
+      onPressed: () {
+        Navigator.pushNamed(context, ruta);
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,61 +51,13 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Expanded(
-                child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(12.0),
-                    side: BorderSide(color: Colors.red[900]),
-                  ),
-                  //splashColor: Colors.red[900],
-                  child: Text(
-                    'RES. DE LA RIOJA ',
-                    style: TextStyle(
-                      fontSize: 13,
-                      color: Colors.black,
-                    ),
-                  ),
-                  textColor: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) {
-                        return ResLaRioja();
-                      }),
-                    );
-                  },
-                ),
-              ),
+                  child:
+                      makeButton(context, '/res_la_rioja', 'RES.DE LA RIOJA')),
               SizedBox(
                 width: 14,
               ),
               Expanded(
-                child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(12.0),
-                    side: BorderSide(color: Colors.red[900]),
-                  ),
-                  //splashColor: Colors.red[900],
-                  child: Text(
-                    'RES. REINA SOFIA ',
-                    style: TextStyle(
-                      fontSize: 13,
-                      color: Colors.black,
-                    ),
-                  ),
-                  textColor: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) {
-                        return ResLaRioja();
-                      }),
-                    );
-                  },
-                ),
+                child: makeButton(context, '/res_la_rioja', 'RES. REINA SOFIA'),
               ),
             ],
           ),
@@ -95,61 +67,13 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Expanded(
-                child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(12.0),
-                    side: BorderSide(color: Colors.red[900]),
-                  ),
-                  //splashColor: Colors.red[900],
-                  child: Text(
-                    'LOGROÑO-POLIGONO ',
-                    style: TextStyle(
-                      fontSize: 13,
-                      color: Colors.black,
-                    ),
-                  ),
-                  textColor: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) {
-                        return LoPoligono();
-                      }),
-                    );
-                  },
-                ),
+                child: makeButton(context, '/logPoligono', 'LOGROÑO-POLIGONO'),
               ),
               SizedBox(
                 width: 14,
               ),
               Expanded(
-                child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(12.0),
-                    side: BorderSide(color: Colors.red[900]),
-                  ),
-                  //splashColor: Colors.red[900],
-                  child: Text(
-                    'POLIGONO-LOGROÑO ',
-                    style: TextStyle(
-                      fontSize: 13,
-                      color: Colors.black,
-                    ),
-                  ),
-                  textColor: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) {
-                        return Poligono();
-                      }),
-                    );
-                  },
-                ),
+                child: makeButton(context, '/poligono', 'POLIGONO-LOGROÑO'),
               ),
             ],
           ),

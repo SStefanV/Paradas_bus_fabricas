@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './principal.dart';
+import './mainapp.dart';
 
 class ResLaRioja extends StatelessWidget {
   List<String> items = [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './principal.dart';
+import './mainapp.dart';
 
 class LoPoligono extends StatelessWidget {
   List<String> items = [
@@ -16,10 +16,10 @@ class LoPoligono extends StatelessWidget {
     '   Talleres ESNA, El Sequero',
     '   Grafometal, El Sequero',
     '   Rioglass, El Sequero',
-    '   Iberplac, El Sequero',
     '   Quimiberica S.A, El sequero',
+    '   Iberplac, El Sequero',
     '   Galletas Arluy, El Sequero',
-    '   Galletas Reuga, El Sequero',
+    '   Galletas Reyga, El Sequero',
     '   Filial del Lear, El Sequero',
     '   Conservas Riojanas, El Sequero',
     '   Altadis, El Sequero',

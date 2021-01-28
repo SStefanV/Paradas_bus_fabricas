@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './principal.dart';
+import './mainapp.dart';
 
 class Poligono extends StatelessWidget {
   List<String> items = [
@@ -8,8 +8,8 @@ class Poligono extends StatelessWidget {
     '   Filial del Lear, El Sequero',
     '   Galletas Reyga, El Sequero',
     '   Galletas Arluy, El Sequero',
-    '   Quimiberica S.A, El sequero',
     '   Iberplac, El Sequero',
+    '   Quimiberica S.A, El sequero',
     '   Rioglass, El Sequero',
     '   Grafometal, El Sequero',
     '   Talleres ESNA, El Sequero',
