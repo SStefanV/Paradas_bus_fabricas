@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import './home.dart';
-import './poligono.dart';
-import 'log_poligono.dart';
-import 'residenciaLaRioja.dart';
+import 'paginas/crown.dart';
+import 'paginas/poligono.dart';
+import 'paginas/log_poligono.dart';
+import 'paginas/resReinaSofia.dart';
+import 'paginas/residenciaLaRioja.dart';
 
 void main() {
   runApp(MaterialApp(initialRoute: '/', routes: {
@@ -12,5 +14,7 @@ void main() {
     '/poligono': (context) => Poligono(),
     '/logPoligono': (context) => LoPoligono(),
     '/res_la_rioja': (context) => ResLaRioja(),
+    '/res_r_sofia': (context) => ResReinaSofia(),
+    '/crown': (context) => Crown(),
   }));
 }

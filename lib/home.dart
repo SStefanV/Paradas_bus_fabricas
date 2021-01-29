@@ -48,6 +48,16 @@ class MyApp extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(10.0, 45, 10, 0),
               child: Column(children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 18.0),
+                  child: Text('Fabricas y Residencias',
+                      style: TextStyle(
+                        color: Colors.blueGrey[900],
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ),
+                SizedBox(height: 12.0),
                 //ROW 1---------------------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -60,7 +70,7 @@ class MyApp extends StatelessWidget {
                     ),
                     Expanded(
                       child: makeButton(
-                          context, '/res_la_rioja', 'RES. REINA SOFIA'),
+                          context, '/res_r_sofia', 'RES. REINA SOFIA'),
                     ),
                   ],
                 ),
@@ -152,7 +162,7 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Expanded(
-                      child: makeButton(context, '/logPoligono', 'CROWN'),
+                      child: makeButton(context, '/crown', 'CROWN'),
                     ),
                     SizedBox(
                       width: 14,
