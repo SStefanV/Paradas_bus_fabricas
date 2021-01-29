@@ -29,25 +29,22 @@ class LoPoligono extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey[50],
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.fromLTRB(38, 10, 0, 0),
           child: Image.asset('images/jlogo3.png', fit: BoxFit.cover),
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.blueGrey[600],
         bottom: PreferredSize(
             child: Container(
-              color: Colors.red[900],
-              height: 2.0,
+              color: Colors.blueGrey[900],
+              height: 4.0,
             ),
             preferredSize: Size.fromHeight(8.0)),
       ),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(5.0, 15, 5, 0),
-          child: MainApp(items, name),
-        ),
+        child: MainApp(items, name),
       ),
     );
   }
