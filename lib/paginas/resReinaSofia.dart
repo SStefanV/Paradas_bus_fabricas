@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../cardRuta.dart';
+import '../helper.dart';
 
 class ResReinaSofia extends StatelessWidget {
   List<String> items = [
@@ -11,9 +11,11 @@ class ResReinaSofia extends StatelessWidget {
     'C/ Murrieta (P. Bus Bene)\n\n\n7:20 14:20 21:20',
     'Avda. Club Deportivo, 33(Edificio Arsys)\n\n7:20 14:20 21:20',
   ];
-  String name = 'Residencia R. Sofia';
+  String name = 'Residencia R.Sofia';
+  String cod = '40';
+  Helper help = Helper();
   @override
   Widget build(BuildContext context) {
-    return CardBuilder(items, name);
+    return help.buildCard(items, name, cod);
   }
 }

@@ -5,11 +5,11 @@ class MyApp extends StatelessWidget {
   // metodo para construir botones en la pantalla de inicio
   Widget makeButton(BuildContext context, String ruta, String name) {
     return RaisedButton(
-      padding: EdgeInsets.fromLTRB(0, 18, 0, 18),
+      padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
       color: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: new BorderRadius.circular(6.0),
-        side: BorderSide(color: Colors.blueGrey[900]),
+        //side: BorderSide(color: Colors.blueGrey[900]),
       ),
       //splashColor: Colors.red[900],
       child: Text(
@@ -35,12 +35,12 @@ class MyApp extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(90, 10, 0, 0),
             child: Image.asset('images/jlogo3.png', fit: BoxFit.cover),
           ),
-          bottom: PreferredSize(
-              child: Container(
-                color: Colors.blueGrey[900],
-                height: 4.0,
-              ),
-              preferredSize: Size.fromHeight(8.0)),
+          // bottom: PreferredSize(
+          //     child: Container(
+          //       color: Colors.blueGrey[900],
+          //       height: 4.0,
+          //     ),
+          //     preferredSize: Size.fromHeight(8.0)),
           //centerTitle: true,
         ),
         body: SafeArea(
@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 2 --------------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 3----------------------------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -108,7 +108,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 4--------------------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -124,7 +124,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 5----------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -140,7 +140,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 6 ----------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -156,7 +156,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 7 -----------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -172,7 +172,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 12.0),
+                SizedBox(height: 15.0),
                 //ROW 8 -----------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -185,7 +185,7 @@ class MyApp extends StatelessWidget {
                       width: 14,
                     ),
                     Expanded(
-                      child: makeButton(context, '/poligono', 'IAC 2'),
+                      child: makeButton(context, '/proba', 'Proba'),
                     ),
                   ],
                 ),

@@ -3,6 +3,7 @@ import './home.dart';
 import 'paginas/crown.dart';
 import 'paginas/poligono.dart';
 import 'paginas/log_poligono.dart';
+import 'paginas/proba.dart';
 import 'paginas/resReinaSofia.dart';
 import 'paginas/residenciaLaRioja.dart';
 
@@ -16,5 +17,6 @@ void main() {
     '/res_la_rioja': (context) => ResLaRioja(),
     '/res_r_sofia': (context) => ResReinaSofia(),
     '/crown': (context) => Crown(),
+    '/proba': (context) => Proba(),
   }));
 }
