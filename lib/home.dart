@@ -98,13 +98,13 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Expanded(
-                      child: makeButton(context, '/logPoligono', 'INCONAL'),
+                      child: makeButton(context, '/inconal', 'INCONAL'),
                     ),
                     SizedBox(
                       width: 14,
                     ),
                     Expanded(
-                      child: makeButton(context, '/poligono', 'GRAFOMETAL'),
+                      child: makeButton(context, '/grafometal', 'GRAFOMETAL'),
                     ),
                   ],
                 ),
