@@ -30,7 +30,8 @@ class MyApp extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.blueGrey[100],
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.blueGrey[600],
+          elevation: 0.0,
           title: Padding(
             padding: const EdgeInsets.fromLTRB(90, 10, 0, 0),
             child: Image.asset('images/jlogo3.png', fit: BoxFit.cover),
@@ -43,155 +44,165 @@ class MyApp extends StatelessWidget {
           //     preferredSize: Size.fromHeight(8.0)),
           //centerTitle: true,
         ),
-        body: SafeArea(
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(10.0, 45, 10, 0),
-              child: Column(children: [
+        body: Column(children: [
+          Container(
+            // margin: const EdgeInsets.fromLTRB(0, 0, 0, 18),
+            color: Colors.blueGrey[600],
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 18.0),
+                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 25),
                   child: Text('Fabricas y Residencias',
                       style: TextStyle(
-                        color: Colors.blueGrey[900],
+                        color: Colors.white,
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
                       )),
                 ),
-                SizedBox(height: 12.0),
-                //ROW 1---------------------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                        child: makeButton(
-                            context, '/res_la_rioja', 'RES.DE LA RIOJA')),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(
-                          context, '/res_r_sofia', 'RES. REINA SOFIA'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 2 --------------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(
-                          context, '/logPoligono', 'LOGROÑO-POLIGONO'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child:
-                          makeButton(context, '/poligono', 'POLIGONO-LOGROÑO'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 3----------------------------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(context, '/inconal', 'INCONAL'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(context, '/grafometal', 'GRAFOMETAL'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 4--------------------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(context, '/logPoligono', 'IAC 1'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(context, '/poligono', 'IAC 2'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 5----------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(context, '/logPoligono', 'IAC 3'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(context, '/poligono', 'IAC OFICINAS'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 6 ----------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(context, '/logPoligono', 'MASA'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(context, '/poligono', 'LOGISTA'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 7 -----------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(context, '/crown', 'CROWN'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(context, '/poligono', 'SAICA'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 15.0),
-                //ROW 8 -----------------------------------
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                      child: makeButton(
-                          context, '/logPoligono', 'C.A.P.D.P SANTA LUCIA'),
-                    ),
-                    SizedBox(
-                      width: 14,
-                    ),
-                    Expanded(
-                      child: makeButton(context, '/proba', 'Proba'),
-                    ),
-                  ],
-                ),
-              ]),
+              ],
             ),
           ),
-        ));
+          Flexible(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(height: 30.0),
+                  //ROW 1---------------------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                          child: makeButton(
+                              context, '/res_la_rioja', 'RES.DE LA RIOJA')),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(
+                            context, '/res_r_sofia', 'RES. REINA SOFIA'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 2 --------------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(
+                            context, '/logPoligono', 'LOGROÑO-POLIGONO'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(
+                            context, '/poligono', 'POLIGONO-LOGROÑO'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 3----------------------------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(context, '/inconal', 'INCONAL-LOG'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(context, '/grafometal', 'GRAFOMETAL'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 4--------------------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(context, '/logSaica', 'LOG-SAICA'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(context, '/saica', 'SAICA-LOG'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 5----------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(context, '/crown', 'CROWN'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(context, '/poligono', 'LOGISTA'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 6 ----------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(context, '/logPoligono', 'IAC 3'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(context, '/poligono', 'IAC OFICINAS'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 7 -----------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(context, '/logPoligono', 'MASA'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(context, '/poligono', 'IAC 2'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15.0),
+                  //ROW 8 -----------------------------------
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: makeButton(
+                            context, '/logPoligono', 'C.A.P.D.P SANTA LUCIA'),
+                      ),
+                      SizedBox(
+                        width: 14,
+                      ),
+                      Expanded(
+                        child: makeButton(context, '/proba', 'Proba'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ]));
   }
 }

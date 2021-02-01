@@ -3,11 +3,13 @@ import './home.dart';
 import 'paginas/crown.dart';
 import 'paginas/grafometal.dart';
 import 'paginas/inconal.dart';
+import 'paginas/logSaica.dart';
 import 'paginas/poligono.dart';
 import 'paginas/log_poligono.dart';
 import 'paginas/proba.dart';
 import 'paginas/resReinaSofia.dart';
 import 'paginas/residenciaLaRioja.dart';
+import 'paginas/saica.dart';
 
 void main() {
   runApp(MaterialApp(initialRoute: '/', routes: {
@@ -22,5 +24,7 @@ void main() {
     '/proba': (context) => Proba(),
     '/inconal': (context) => Inconal(),
     '/grafometal': (context) => Grafometal(),
+    '/saica': (context) => Saica(),
+    '/logSaica': (context) => LogSaica(),
   }));
 }

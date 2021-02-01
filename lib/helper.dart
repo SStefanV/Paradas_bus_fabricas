@@ -5,23 +5,24 @@ class Helper {
     return Scaffold(
         backgroundColor: Colors.blueGrey[200],
         appBar: AppBar(
+          elevation: 0.0,
           title: Padding(
             padding: const EdgeInsets.fromLTRB(38, 10, 0, 0),
             child: Image.asset('images/jlogo3.png', fit: BoxFit.cover),
           ),
           backgroundColor: Colors.blueGrey[600],
-          bottom: PreferredSize(
-              child: Container(
-                color: Colors.blueGrey[900],
-                height: 1.0,
-              ),
-              preferredSize: Size.fromHeight(8.0)),
+          // bottom: PreferredSize(
+          //     child: Container(
+          //       color: Colors.blueGrey[900],
+          //       height: 1.0,
+          //     ),
+          //     preferredSize: Size.fromHeight(8.0)),
         ),
         body: Column(
           children: [
             Container(
               decoration: BoxDecoration(
-                  color: Colors.blueGrey[500],
+                  color: Colors.blueGrey[600],
                   border: Border(
                     bottom: BorderSide(
                       color: Colors.blueGrey[900],

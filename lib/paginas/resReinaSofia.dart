@@ -9,20 +9,20 @@ class ResReinaSofia extends StatelessWidget {
     },
     {
       'name': 'Avda. de Lobete\n(Frente Gym Sparta)',
-      'ora': '7:25  14:25  21:25'
+      'ora': '7:22  14:22  21:22'
     },
     {
       'name': 'Avda. De La Paz, 47\n(P.Bus Pampano)',
-      'ora': '7:30  14:30  21:30'
+      'ora': '7:24  14:24  21:24'
     },
-    {'name': 'Vara de rey\n(Banco de España)', 'ora': '7:35  14:35  21:35'},
-    {'name': 'Gran Via, 40\n(Daniel Trevijano)', 'ora': '7:40  14:40  21:40'},
-    {'name': 'C/ Murrieta\n(P. Bus Bene)', 'ora': '7:45  14:45  21:45'},
+    {'name': 'Vara de rey\n(Banco de España)', 'ora': '7:26  14:26  21:26'},
+    {'name': 'Gran Via, 40\n(Daniel Trevijano)', 'ora': '7:28  14:28  21:28'},
+    {'name': 'C/ Murrieta\n(P. Bus Bene)', 'ora': '7:30  14:30  21:30'},
     {
       'name': 'Avda. Club Deportivo, 33\n(Edificio Arsys)',
-      'ora': '7:50  14:50  21:50'
+      'ora': '7:32  14:32  21:32'
     },
-    {'name': 'Residencia Reina Sofia', 'ora': '7:55  14:55  21:55'}
+    {'name': 'Residencia Reina Sofia', 'ora': '7:50  14:50  21:50'}
   ];
   String name = 'Residencia R.Sofia';
   String cod = '312';
