@@ -75,7 +75,7 @@ class Helper {
                         borderRadius: BorderRadius.circular(6)),
                     margin: EdgeInsets.fromLTRB(10, 30, 10, 5),
                     elevation: 15,
-                    shadowColor: Colors.green[900],
+                    shadowColor: Colors.blueGrey[900],
                     child: Column(
                       children: <Widget>[
                         //CARD CONTENT
