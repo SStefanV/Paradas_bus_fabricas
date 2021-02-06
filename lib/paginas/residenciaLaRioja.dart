@@ -10,16 +10,16 @@ class ResLaRioja extends StatelessWidget {
     {'name': 'Gran Via, 40\n(Calle Lardero)', 'ora': '7:40  14:40  21:40'},
     {'name': 'G. Berceo con\nC/Medrano(Farmacia)', 'ora': '7:45  14:45  21:45'},
     {
-      'name': 'C/Chile con C/Barreras\n(Talleres Midas)',
+      'name': 'C/Chile con C/Barreras(Talleres Midas)',
       'ora': '7:50  14:50  21:50'
     },
-    {'name': 'Residencia de La Rioja\n', 'ora': '7:55  14:55  21:55'}
+    {'name': 'Residencia de La Rioja', 'ora': '7:55  14:55  21:55'}
   ];
   String name = 'Residencia de La Rioja';
   String cod = '424';
   Helper help = Helper();
   @override
   Widget build(BuildContext context) {
-    return help.buildCard(items, name, cod);
+    return help.buildCard(items, name, cod, context);
   }
 }

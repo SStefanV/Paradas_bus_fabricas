@@ -3,6 +3,7 @@ import './home.dart';
 import 'paginas/crown.dart';
 import 'paginas/grafometal.dart';
 import 'paginas/inconal.dart';
+import 'paginas/logLogista.dart';
 import 'paginas/logSaica.dart';
 import 'paginas/poligono.dart';
 import 'paginas/log_poligono.dart';
@@ -13,7 +14,7 @@ import 'paginas/saica.dart';
 
 void main() {
   runApp(MaterialApp(initialRoute: '/', routes: {
-    // When navigating to the "/" route, build the FirstScreen widget.
+    // When navigating to the "/" route, build the MyApp widget.
     '/': (context) => MyApp(),
 
     '/poligono': (context) => Poligono(),
@@ -26,5 +27,6 @@ void main() {
     '/grafometal': (context) => Grafometal(),
     '/saica': (context) => Saica(),
     '/logSaica': (context) => LogSaica(),
+    '/logLogista': (context) => LogLogista(),
   }));
 }

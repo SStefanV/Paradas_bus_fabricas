@@ -31,6 +31,6 @@ class LogSaica extends StatelessWidget {
   Helper help = Helper();
   @override
   Widget build(BuildContext context) {
-    return help.buildCard(items, name, cod);
+    return help.buildCard(items, name, cod, context);
   }
 }
